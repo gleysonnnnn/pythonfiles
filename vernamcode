@@ -15,3 +15,8 @@ elif mode == 'dec':
 for msgchar in msg:
 	xored += chr(ord(key[keyidx%len(key)]) ^ ord(msgchar)
 	keyidx += 1
+
+if mode == 'enc':
+	print binascii.hexlify(xored)
+elif mode == 'dec':
+	print xored
